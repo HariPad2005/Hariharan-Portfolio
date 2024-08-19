@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #ffcc33, #ff6666, #66ccff);
-     background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #333;
     transition: all 0.3s ease-in-out;
