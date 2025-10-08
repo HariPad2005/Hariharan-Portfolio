@@ -1,10 +1,10 @@
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    
+
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
-    
+
     console.log('Form Submitted!', { name, email, message });
 
     alert('Thank you for your message!');
@@ -23,6 +23,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 section.classList.remove("active");
             }
         });
+
+        // Optional: Add a class to the active link for styling
+        links.forEach(link => {
+            if (link.getAttribute("data-section") === sectionId) {
+                link.classList.add("active-link");
+            } else {
+                link.classList.remove("active-link");
+            }
+        });
     }
 
     links.forEach(link => {
@@ -36,4 +45,3 @@ document.addEventListener("DOMContentLoaded", function() {
     // Show the 'about' section by default
     showSection("about");
 });
-
